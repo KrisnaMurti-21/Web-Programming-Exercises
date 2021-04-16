@@ -48,7 +48,6 @@ while (!feof($file_handle) ) {
     $i++;
     $line_of_text = fgets($file_handle);
     $parts = explode('|', $line_of_text);
-    hitungUsia($parts[2], "2021-04-16");
     echo "<tr><td height='119'>".$i."</td>
     <td>$parts[0]</td>
     <td>$parts[1]</td>
