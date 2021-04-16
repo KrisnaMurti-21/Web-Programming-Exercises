@@ -6,6 +6,7 @@
 <body>
 <p> DATA MAHASISWA </P>
 <table border="1">
+  <th>No</th>
   <th>NIM</th>
   <th>Nama</th>
   <th>Tanggal Lahir</th>
@@ -44,16 +45,18 @@ function hitungUsia($tgl1, $tgl2){
 }
 $i=0;
 while (!feof($file_handle) ) {
+    $i++;
     $line_of_text = fgets($file_handle);
     $parts = explode('|', $line_of_text);
     hitungUsia($parts[2], "2021-04-16");
-    echo "<tr><td height='119'>$parts[0]</td>
+    echo "<tr><td height='119'>".$i."</td>
+    <td>$parts[0]</td>
     <td>$parts[1]</td>
     <td>$parts[2]</td>
     <td>$parts[3]</td>
     <td>".hitungUsia($parts[2], date("Y-m-d"));"</td>
     </tr>";
-    $i++;
+    
 }
 fclose($file_handle);
 
@@ -64,7 +67,7 @@ fclose($file_handle);
 </table>
 <?php
 echo "<br>";
-echo "Jumlah Data :" .$i;
+echo "Jumlah Data : " .$i;
 ?>
 
 </body>
