@@ -25,4 +25,5 @@ fclose($myfile);
 
 ?>
 </table>
+</body>
 </html>
