@@ -4,7 +4,7 @@
 <title> DATA UKURAN TABUNG </title>
 </head>
 <body>
-<p> DATA MAHASISWA </P>
+<p> DATA UKURAN TABUNG </P>
 <table border="1">
   <th>Nama Tabung</th>
   <th>Diameter</th>
