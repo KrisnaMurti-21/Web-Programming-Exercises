@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> DATA MAHASISWA </title>
+<title> DATA UKURAN TABUNG </title>
 </head>
 <body>
 <p> DATA MAHASISWA </P>
